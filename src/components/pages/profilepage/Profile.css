@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(19, 18, 18);
+    color: gainsboro;
+
+}
+
+#colCard{
+    justify-content: center;
+    display: flex;
+}
+
+.data{
+    color: gainsboro;
+    text-align: center;
+}
+
+.data h6{
+    color: greenyellow;
+}
+
+.card{
+    border-radius: 10px;
+    width: 400px;    
+    z-index: 1;
+}
+
+.btn{
+    color: gainsboro;
+    background-color: rgb(32, 32, 32);
+}
+
+.btn:hover{
+    background-color: chartreuse;
+}
+
+nav{
+    justify-content: space-between;
+}
+
+#gender{
+    justify-content: space-between;
+}
+

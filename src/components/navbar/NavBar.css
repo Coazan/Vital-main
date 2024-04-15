@@ -1,0 +1,21 @@
+#logo{
+    height: 40px;
+    border-radius: 6px;
+}
+
+.nav-link{
+    color: gainsboro;
+}
+
+.nav-link:hover{
+    color: chartreuse;
+}
+
+#profileIco{
+    height: 40px;
+}
+
+.list-group-item{
+    background: gainsboro;
+    color: black;
+}

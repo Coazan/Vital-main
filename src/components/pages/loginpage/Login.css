@@ -1,0 +1,56 @@
+/* Login.css */
+
+/* Estilos generales del contenedor */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Estilos del título */
+.login-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Estilos del formulario */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"],
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+button[type="submit"]:focus {
+  outline: none;
+ 
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+ 
+}
+

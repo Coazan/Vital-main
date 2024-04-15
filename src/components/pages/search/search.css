@@ -1,0 +1,140 @@
+.container {
+  max-width:2000px;
+  margin: 0 auto;
+  padding: 1em;
+  
+}
+
+
+.track-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+}
+
+
+.track {
+  width: calc(33.33% -20px);
+  margin-bottom: 20px;
+  box-shadow: 2px 6px 10px rgba(31, 231, 9, 0.7);
+}
+
+
+.track img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #212121;
+  color: #cf119c;
+  box-shadow: 2px 2px 4px rgba(231, 9, 194, 0.7);
+  margin-right: 10px; 
+}
+
+input[type="text"]::placeholder {
+  color: #b3b3b3;
+  
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1db954;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+}
+
+button:hover {
+  background-color: #2a0cd7;
+ 
+}
+
+.track-info {
+  margin-top: 10px;
+  
+}
+
+.track-info h2 {
+  margin-top: 0;
+  font-size: 18px;
+  
+}
+
+
+.track-info iframe {
+  width: 100%;
+  border-radius: 20px;
+}
+
+favoritos .eliminar {
+  display: block;
+  width: 10%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-top: 1px solid #ccc;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+}
+.favoritos li h3 {
+  border: none;
+  
+  padding: 20px;
+  margin: 1px;
+  box-shadow: 1px 2px 3px purple;
+  
+  color: white;
+}
+.favoritos .eliminar:hover {
+  background-color: #3408d5;
+  
+}
+.agregado {
+  color: green; 
+  font-weight: bold; 
+}
+
+button.voice-search {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50; /* Cambia el color de fondo según tu preferencia */
+  color: white; /* Color del texto */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px; /* Agrega un margen izquierdo para separar del botón de búsqueda */
+}
+
+button.voice-search:hover {
+  background-color: #45a049; /* Cambia el color de fondo al pasar el mouse */
+}
+
+
+
+  
+ 
+ 
+ 
