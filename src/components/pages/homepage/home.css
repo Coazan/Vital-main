@@ -78,3 +78,48 @@
     cursor: pointer;
     margin-top: auto;
   }
+
+  /* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px; /* Aumentar el espaciado encima de la paginación */
+}
+
+.pagination-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination-item {
+  margin: 0 5px; /* Espaciado entre los enlaces de página */
+}
+
+.pagination-link {
+  display: inline-block;
+  padding: 10px 15px;
+  border: 1px solid #007bff; /* Cambiar el color del borde a azul */
+  border-radius: 5px; /* Añadir borde redondeado */
+  text-decoration: none;
+  color: #007bff; /* Cambiar el color del texto a azul */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-link:hover {
+  background-color: #007bff; /* Cambiar el color de fondo al pasar el ratón */
+  color: #fff; /* Cambiar el color del texto a blanco */
+}
+
+.pagination-link.active {
+  background-color: #007bff; /* Fondo azul para página activa */
+  color: #fff; /* Texto blanco para página activa */
+}
+
+/* Ocultar texto "Siguiente" y "Anterior" */
+.pagination-link.prev,
+.pagination-link.next {
+  display: none;
+}

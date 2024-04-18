@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Login.css'; // Import the CSS file
 
+
+
 export function Login() {
   // State variables for username and password
   const [username, setUsername] = useState('');
@@ -43,7 +45,9 @@ export function Login() {
             <input type="checkbox" id="remember-me" /> Recuérdame
           </label>
         </div>
-        <button type="submit">Iniciar sesión</button>
+        <button onClick={() => window.location.href = "/home"} type="button">Iniciar sesión</button>
+
+
         <a href="#">¿Olvidaste tu contraseña?</a>
       </form>
     </div>
