@@ -12,11 +12,15 @@ export function NavBar() {
       <nav className="navbar m-0 navbar-expand-sm bg-dark bg-gradient">
         <div className="container-fluid pe-3 ps-3">
           <div className="ico d-flex ">
+          <NavLink to="/home"
+          className={"nav-link"} 
+          data-bs-toggle={"pill"}>
             <img
               id="logo"
               src={vital}
               className="rounded-circle"
             />
+            </NavLink>
           </div>
           <ul className="nav nav-pills">
             <li className="nav-item">

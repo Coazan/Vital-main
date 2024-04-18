@@ -1,0 +1,74 @@
+{
+    "news": [
+            {
+                "id": 1,
+              "title": "Premios Grammy 2024: Lista completa de ganadores",
+              "descripcion": "Este domingo 4 de febrero, la arena Crypto.com de Los Ángeles, California, se llenó de glamour y talento con la entrega de premios Grammy 2024. Celebridades como Taylor Swift, Brandy Clark, Miley Cyrus, Karol G, Tainy, Rauw Alejandro y Maluma, quien recientemente celebró su cumpleaños número 30, estaban entre los nominados de la noche.",
+              "imagen": "https://d34ugyblrhxy34.cloudfront.net/wp-content/uploads/2024/02/05092541/GFiVI8ba8AADYNZ.jpeg",
+              "ver": "https://billboard.ar/lista-completa-de-ganadores-del-grammy-2024/"
+            },
+            {
+                "id": 2,
+              "title": "Llegan noticias del departamento de Taylor Swift",
+              "descripcion": "En caso de que no hayas escuchado el grito ahogado colectivo de los Swifties que se escuchó en todo el mundo, Taylor Swift tiene un nuevo álbum que saldrá en abril. Oh, ¿esperabas un anuncio sobre “Reputation (versión de Taylor)”? Lindo.",
+              "imagen": "https://www.infobae.com/new-resizer/gj_gLwHZ8I_22zM-F0MEMep5VOg=/992x558/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/WXW5METNBFEENMVYYLF3EGTBGI.png",
+              "ver": "https://cnnespanol.cnn.com/2024/02/05/grammy-2024-momentos-destacados-show-trax/"
+            },
+            {
+                "id": 3,
+                "title": "¡Viva los latinos! Karol G y Maluma desfilan en la alfombra de los premios Grammy 2024",
+                "descripcion": "Karol G llega por primera vez a la alfombra de los premios Grammy 2024, y Maluma llega corriendo y preparado para ser uno de los presentadores en el show.",
+                "imagen": "https://www.laopinion.com.co/sites/default/files/2018/11/15/imagen/gramy_0.jpg",
+                "ver": "https://www.telemundo.com/entretenimiento/farandula/famosos/video/viva-los-latinos-karol-g-y-maluma-desfilan-en-la-alfombra-de-los-premios-grammy-2024-tmvo12547915"
+            },
+            {
+                "id": 4,
+                "title": "Shakira conquista las listas de Billboard con 'Las mujeres ya no lloran'",
+                "descripcion": "El nuevo álbum de la cantante colombiana llegó al puesto número uno de las listas de la revista especializada y se convirtió en la primera latina en colocar al menos un disco en este lugar en cuatro décadas diferentes.",
+                "imagen": "https://laopinion.com/wp-content/uploads/sites/3/2024/04/shakira8-ap.jpg?resize=360,202&quality=80",
+                "ver-": "https://laopinion.com/2024/04/03/shakira-debuta-en-el-numero-1-de-la-lista-top-latin-albums-de-billboard-con-las-mujeres-ya-no-lloran/"
+            },
+            {
+                "id": 5,
+                "title": "Aleks Syntek pide regular la música banda y lo tunden en redes",
+                "descripcion": "Aleks Syntek ha generado revuelo en las redes sociales tras comparar la música de banda con contenido pornográfico. La controversia surgió durante un debate en X entre Syntek y José Meyer Ibarra, líder de la banda THERMO, quien criticó la actitud de ciertas élites que buscan censurar géneros musicales considerados 'de mal gusto'.",
+                "imagen": "https://i0.wp.com/newspack-yucatan.s3.amazonaws.com/uploads/2024/03/syntek4.jpg?resize=1024%2C536&ssl=1",
+                "ver": "https://www.telemundo.com/shows/en-casa-con-telemundo/musica/aleks-syntek-pide-regular-la-musica-banda-y-lo-tunden-en-redes-rcna146025"
+            },
+            {
+                "id": 6,
+                "title": "Si no se dedicara a la música, ¿qué le gustaría hacer a Ángela Aguilar? ¡Ni te lo imaginas!",
+                "descripcion": "La princesa de Pepe Aguilar cuenta qué pasará en la nueva gira Jaripeo Hasta los Huesos, revela cómo celebrará su cumpleaños 21 y confiesa que además de la música ama la cocina.",
+                "imagen": "https://desdepuebla.com/wp-content/uploads/2020/07/Imagen4-5-768x451.jpg",
+                "ver": "https://www.telemundo.com/shows/hoy-dia/famosos/video/si-no-se-dedicara-la-musica-que-le-gustaria-hacer-angela-aguilar-ni-te-lo-imaginas-tmvo12612674"
+            },
+            {
+                "id": 7,
+                "title": "¿Por qué la cultura pop está tan obsesionada con las monjas?",
+                "descripcion": "Esta semana, Rihanna sorprendió en una nueva sesión de portada para la revista Interview que cuestionó mucho de lo que sabemos y esperamos de la imagen tradicional de una monja.",
+                "imagen": "https://cnnespanol.cnn.com/wp-content/uploads/2024/04/sydnew.webp?cid=external-feeds_wordpress_yahoo",
+                "ver": "https://es-us.vida-estilo.yahoo.com/cultura-pop-obsesionada-monjas-102832509.html"
+            },
+            {
+                "id": 8,
+                "title": "Fuerza Regida extenderá su tour por diversas ciudades de Estados Unidos",
+                "descripcion": "Es tras esta serie de éxitos que Fuerza Regida se prepara para visitar ciudades como: El Paso, San Antonio, San Diego, Las Vegas, Sacramento y Salt Lake City durante la próxima mitad de este 2023. La gira dará inicio el próximo 6 de junio en Austin, TX y culminará en Inglewood, CA, el 16 de noviembre.",
+                "imagen": "https://laopinion.com/wp-content/uploads/sites/3/2024/04/11625-fuerzaregidapj20232036.jpeg?resize=360,202&quality=80",
+                "ver": "https://cnnespanol.cnn.com/video/fuerza-regida-tour-usa-showbiz/"
+            },
+            {
+                "id": 9,
+                "title": "Grammy 2024: Peso Pluma y Nicki Nicole juntos en la alfombra y revelan si pronto habrá boda",
+                "descripcion": "Peso Pluma y Nicki Nicole desfilaron juntos por la alfombra roja de los Grammy 2024 y revelaron si habrá planes de boda para esta pareja de famosos.",
+                "imagen": "https://th.bing.com/th/id/OIP.E2RUoWoSywwnQoNuH7CtkwHaEK?rs=1&pid=ImgDetMain",
+                "ver": "https://www.telemundo.com/entretenimiento/farandula/famosos/video/grammy-2024-peso-pluma-y-nicki-nicole-juntos-en-la-alfombra-y-revelan-si-pronto-habra-boda-tmvo12547888"
+            },
+            {
+                "id": 10,
+                "title": "Jonatan Sánchez presenta su tema 'Solo tú' y muestra el detrás de cámaras de su video",
+                "descripcion": "El cantante Jonatan Sánchez presenta en exclusiva para Hoy Día su tema 'Solo tú', el cual cuenta la historia de un triángulo amoroso.",
+                "imagen": "https://external.fsal3-1.fna.fbcdn.net/emg1/v/t13/12681723917843602264?url=https%3A%2F%2Fwww.telemundo.com%2Fsites%2Fnbcutelemundo%2Ffiles%2Fstyles%2Fnbcnews-fp-1200-630%2Fpublic%2Fimages%2Fmpx%2F2024%2F04%2F16%2F34146253054-1080pnbcstations.jpg%3Framen_itok%3DiqwQftIcTf&fb_obo=1&utld=telemundo.com&stp=c0.5000x0.5000f_dst-jpg_flffffff_p500x261_q75&ccb=13-1&oh=06_Q399EKpOWb74MJ04oDun6JxsWcOw2fAa9_dApSf10EgHs9c&oe=6620C0F1&_nc_sid=7a31ef",
+                "ver": "https://www.telemundo.com/shows/hoy-dia/musica/video/jonatan-sanchez-presenta-su-tema-solo-tu-y-muestra-el-detras-de-camaras-de-su-video-tmvo12626378"
+            }
+      ]
+}

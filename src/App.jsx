@@ -1,13 +1,10 @@
-
 import { NavBar } from "./components/navbar";
-import { Profile, Home, Search, Login } from "./components/pages"; // Asumiendo que tienes estos componentes exportados correctamente
-import { FavoritesSongs } from "./context/favoritesContext";
+import { Profile, Home, Search, Login } from "./components/pages"; 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <BrowserRouter>
-      <FavoritesSongs>
         <div className="App">
           <NavBar />
           <Routes>
@@ -18,7 +15,6 @@ function App() {
             <Route path="/login" element={<Login />} />
           </Routes>
         </div>
-      </FavoritesSongs>
     </BrowserRouter>
   );
 }

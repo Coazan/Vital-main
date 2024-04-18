@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import "./search.css";
+import { useDispatch } from "react-redux";
+import { addFavorite } from "../../../storage/slice";
 
 export function Search() {
   const [cancion, setCancion] = useState("");
   const [canciones, setCanciones] = useState([]);
-  const [favoritos, setFavoritos] = useState([]);
+  const [favoritos, setFavoritos] = useState(false);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const dispatch = useDispatch();
 
   async function handleSearch(e) {
     e.preventDefault();
@@ -18,17 +21,15 @@ export function Search() {
     try {
       await getSong(cancion);
     } catch (error) {
-      console.error(`Error: ${error}`);
       setError(
         "Ups... Ha ocurrido un error. Por favor, intenta de nuevo más tarde."
       );
     }
     setLoading(false);
   }
-  import.meta.env.VITE_URI_SPOTIFY
+
   async function getSong(cancion) {
-    //console.log(import.meta.env.VITE_URI_SPOTIFY  )
-    let url =  import.meta.env.VITE_URI_SPOTIFY + `/search/?q=${encodeURIComponent(
+    let url = `${import.meta.env.VITE_URI_SPOTIFY}/search/?q=${encodeURIComponent(
       cancion
     )}&type=multi&offset=0&limit=30&numberOfTopResults=5`;
     try {
@@ -46,31 +47,19 @@ export function Search() {
       setCanciones(data.tracks.items);
     } catch (error) {
       console.error("Error:", error.message);
-      setError(
-        "Ups... Ha ocurrido un error. Por favor, intenta de nuevo más tarde."
-      );
+      throw error;
     }
   }
 
   function addToFavorites(cancion) {
-    setFavoritos([...favoritos, cancion]);
+    dispatch(addFavorite(cancion));
+    setFavoritos(!favoritos);
   }
 
   function removeFromFavorites(index) {
     const newFavoritos = [...favoritos];
     newFavoritos.splice(index, 1);
     setFavoritos(newFavoritos);
-  }
-
-  // Función para manejar la búsqueda por voz
-  function handleVoiceSearch() {
-    const recognition = new window.webkitSpeechRecognition();
-    recognition.lang = "es-ES";
-    recognition.start();
-    recognition.onresult = (event) => {
-      const transcript = event.results[0][0].transcript;
-      setCancion(transcript);
-    };
   }
 
   return (
@@ -83,9 +72,8 @@ export function Search() {
           onChange={(e) => setCancion(e.target.value)}
         />
         <button type="submit" disabled={loading}>
-          {loading ? "Buscando..." : "Buscar🕵🏼"}
+          {loading ? "Buscando..." : <i class="fa-solid fa-magnifying-glass"></i>}
         </button>
-        <button className="voice-search" onClick={handleVoiceSearch}>🎤</button>
       </form>
       {error && <div className="error">{error}</div>}
       <div className="track-container">
@@ -105,39 +93,13 @@ export function Search() {
                 allow="encrypted-media"
               ></iframe>
               <button onClick={() => addToFavorites(cancion)}>
-                {favoritos.includes(cancion) ? "✅" : "❤️"}
+              <i class="fa-sharp fa-regular fa-star"></i>
               </button>
             </div>
           </div>
         ))}
       </div>
-      <div className="favoritos">
-        <h2>Favoritos</h2>
-        <ul>
-          {favoritos.map((favorito, index) => (
-            <li key={index}>
-              <h3>{favorito.data.name}</h3>
-              {favorito.data.albumOfTrack.coverArt.sources[0] && (
-                <img src={favorito.data.albumOfTrack.coverArt.sources[0].url} alt="" />
-              )}
-              <iframe
-                src={`https://open.spotify.com/embed/track/${favorito.data.id}`}
-                width="300"
-                height="80"
-                frameBorder="0"
-                allowTransparency="true"
-                allow="encrypted-media"
-              ></iframe>
-              <button className="eliminar" onClick={() => removeFromFavorites(index)}>❌</button>
-            </li>
-          ))}
-        </ul>
-      </div>
+      
     </div>
   );
 }
-
-  
- 
- 
- 

@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./Profile.css";
 import vital from "../../../assets/vital.jpg"
-import { FavoritesContext } from "../../../context/favoritesContext";
+import { useSelector } from "react-redux";
 
-export const Profile = () =>  {
-  const {song} = useContext(FavoritesContext);
+export const Profile = () => {
+  const favs = useSelector(state => state.mrFavorites.favorites)
   return (
     <>
       <div className="container-fluid">
@@ -42,7 +42,23 @@ export const Profile = () =>  {
             <div className=" mt-3 border rounded">
               <h2>Favoritos</h2>
               <ul className="list-group">
-                <li className="list-group-item">{song} </li>
+                {favs.map((favorito, index) => (
+                  <li key={index}>
+                    <h3>{favorito.data.name}</h3>
+                    {favorito.data.albumOfTrack.coverArt.sources[0] && (
+                      <img src={favorito.data.albumOfTrack.coverArt.sources[0].url} alt="" />
+                    )}
+                    <iframe
+                      src={`https://open.spotify.com/embed/track/${favorito.data.id}`}
+                      width="300"
+                      height="80"
+                      frameBorder="0"
+                      allowTransparency="true"
+                      allow="encrypted-media"
+                    ></iframe>
+                    {/*<button className="eliminar" onClick={() => removeFromFavorites(index)}>❌</button>*/}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
