@@ -1,26 +1,25 @@
 import React, { useState } from 'react';
-import './Login.css';
+import './Login.css'; // Import the CSS file
 
 export function Login() {
-  // Estado para almacenar el nombre de usuario y la contraseña
+  // State variables for username and password
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  // Función para manejar el envío del formulario
+  // Function to handle form submission
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Aquí puedes realizar cualquier acción que desees después de enviar el formulario
-    // Por ejemplo, podrías enviar los datos a un servidor para autenticación
-    console.log('Nombre de usuario:', username);
-    console.log('Contraseña:', password);
+    console.log('Username:', username);
+    console.log('Password:', password);
+    // Add your logic for form submission here (e.g., sending data to server)
   };
 
   return (
     <div className="login-container">
-      <h2>Iniciar Sesión</h2>
+      <h2>Iniciar sesión</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="username">Nombre de Usuario:</label>
+          <label htmlFor="username">Nombre de usuario</label>
           <input
             type="text"
             id="username"
@@ -30,7 +29,7 @@ export function Login() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="password">Contraseña:</label>
+          <label htmlFor="password">Contraseña</label>
           <input
             type="password"
             id="password"
@@ -39,7 +38,13 @@ export function Login() {
             required
           />
         </div>
-        <button type="submit">Iniciar Sesión</button>
+        <div className="form-group">
+          <label htmlFor="remember-me">
+            <input type="checkbox" id="remember-me" /> Recuérdame
+          </label>
+        </div>
+        <button type="submit">Iniciar sesión</button>
+        <a href="#">¿Olvidaste tu contraseña?</a>
       </form>
     </div>
   );
