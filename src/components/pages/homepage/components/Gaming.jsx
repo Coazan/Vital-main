@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export const Gaming = ({novedadesPerPage, totalNovedades, currentPage, setCurrentPage }) => {
 
@@ -22,12 +22,12 @@ export const Gaming = ({novedadesPerPage, totalNovedades, currentPage, setCurren
 
   return (
     <nav 
-      className='pagination is-centered mb-6' 
+      className='pagination is-centered' 
       role='navigation' 
       aria-label='pagination'
     >
       <a 
-        className={`pagination-previous ${
+        className={`pagination-previous is-link ${
           currentPage === 1 ? 'is-disabled' : ''
         }`} 
         onClick={onPreviusPage} >Anterior</a>
@@ -50,7 +50,6 @@ export const Gaming = ({novedadesPerPage, totalNovedades, currentPage, setCurren
               </li>
             ))
           }
-          
         </ul>
     </nav>
   );

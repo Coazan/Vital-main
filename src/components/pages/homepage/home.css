@@ -1,125 +1,120 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
- /* body{
-    font-family: Poppins;
-    max-width: 1100px;
-    margin: 0 auto;
-  
-  
-  }*/
-  
-  img{
-    max-width: 100%;
-  }
-  
-  .title{
-    text-align: center;
-    padding: 30px 0;
-  }
-  
-  
-  .container-novedades{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 10px;
-  }
-  
-  .card-novedades{
-    flex: 25%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-  }
-  
-  
-  
-  .container-img{
-    flex: 1;
-  }
-  
-  .container-img img{
-    width: 100%;
-    height: 75%;
-    object-fit: contain;
-  
-  }
-  
-  .info-novedad{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 15px 30px;
-    height: 100%;
-  }
-  
-  .info-novedad h3{
-    color: #777;
-    font-weight: 500;
-  }
-  
-  
-  .ver-mas{
-    color: #000;
-    font-weight: 700;
-    margin: 15px 0;
-  }
-  
-  .info-novedad button{
-    background-color: #992626;
-    color: #fff;
-    border: none;
-    display: block;
-    width: 100%;
-    padding: 10px 0;
-    cursor: pointer;
-    margin-top: auto;
-  }
-
-  /* Pagination Styles */
-.pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px; /* Aumentar el espaciado encima de la paginación */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.pagination-list {
-  display: flex;
-  list-style: none;
+html {
+  margin: 0;
   padding: 0;
 }
 
-.pagination-item {
-  margin: 0 5px; /* Espaciado entre los enlaces de página */
+img{
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  padding: 15px;
 }
 
-.pagination-link {
-  display: inline-block;
-  padding: 10px 15px;
-  border: 1px solid #007bff; /* Cambiar el color del borde a azul */
-  border-radius: 5px; /* Añadir borde redondeado */
-  text-decoration: none;
-  color: #007bff; /* Cambiar el color del texto a azul */
+p {
+  color: #e8d4d4;
+}
+
+.title{
+  text-align: center;
+  padding: 30px 0;
+}
+
+
+.container-novedades{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  height: 100%;
+}
+
+.card-novedades{
+  flex: 25%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+
+
+.container-img{
+  flex: 1;
+}
+
+.container-img img{
+  width: 100%;
+  height: 75%;
+  object-fit: contain;
+
+}
+
+.info-novedad{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 15px 30px;
+  height: 100%;
+}
+
+.info-novedad h3{
+  color: #f6f6f6;
+  font-weight: 500;
+}
+
+.container{
+  margin: 15px;
+}
+
+.ver-mas{
+  color: #ddd2d2;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.info-novedad button{
+  background-color: #ff7171;
+  color: #f6f6f6;
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin-top: auto;
 }
 
-.pagination-link:hover {
-  background-color: #007bff; /* Cambiar el color de fondo al pasar el ratón */
-  color: #fff; /* Cambiar el color del texto a blanco */
+@media screen and (max-width: 768px) {
+  .container-novedades {
+    grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas en tabletas */
+  }
+
+  .card-novedades {
+    margin-bottom: 5px; /* Reduce el espacio entre las tarjetas */
+  }
+
+  .container-img img {
+    height: auto; /* Permite que la altura de la imagen se ajuste automáticamente */
+  }
+
+  .info-novedad {
+    padding: 10px 20px; /* Reduce el padding en pantallas más pequeñas */
+  }
+
+  .info-novedad h3 {
+    font-size: 1.2em; /* Reduce el tamaño del título en pantallas más pequeñas */
+  }
+
+  .info-novedad button {
+    padding: 8px 0; /* Reduce el padding del botón en pantallas más pequeñas */
+  }
 }
 
-.pagination-link.active {
-  background-color: #007bff; /* Fondo azul para página activa */
-  color: #fff; /* Texto blanco para página activa */
-}
-
-/* Ocultar texto "Siguiente" y "Anterior" */
-.pagination-link.prev,
-.pagination-link.next {
-  display: none;
+@media screen and (max-width: 480px) {
+  .container-novedades {
+    grid-template-columns: repeat(1, 1fr); /* Cambia a una columna en dispositivos móviles */
+  }
 }

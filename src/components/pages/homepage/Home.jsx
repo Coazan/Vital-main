@@ -7,7 +7,7 @@ import './home.css';
   const [count, setCount] = useState(0);
 
   return (
-    <div className='App'>
+    <div >
       <h1 className='title'>Novedades Music</h1>
       <NovedadesList novedades={novedadesData.news} />
     </div>

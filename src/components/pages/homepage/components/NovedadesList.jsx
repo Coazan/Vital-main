@@ -5,7 +5,7 @@ export const NovedadesList = ({ novedades }) => {
 
   const totalNovedades = novedades.length
 
-  const [novedadesPerPage, setNovedadesPerPage] = useState(3);
+  const [novedadesPerPage, setNovedadesPerPage] = useState(2);
   const [currentPage, setCurrentPage] = useState(1);
 
   const lastIndex = currentPage * novedadesPerPage
