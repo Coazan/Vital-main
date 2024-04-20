@@ -21,36 +21,22 @@ export const Gaming = ({novedadesPerPage, totalNovedades, currentPage, setCurren
   }
 
   return (
-    <nav 
-      className='pagination is-centered' 
-      role='navigation' 
-      aria-label='pagination'
-    >
-      <a 
-        className={`pagination-previous is-link ${
-          currentPage === 1 ? 'is-disabled' : ''
-        }`} 
-        onClick={onPreviusPage} >Anterior</a>
-      <a 
-        className={`pagination-next ${
-        currentPage >= pageNumber.length ? 'is-disabled' : ''}`} 
-        onClick={onNextPage}>Siguiente</a>
-        <ul class='pagination-list'>
-          {
-            pageNumber.map(noPage => (
-              <li key={noPage}>
-                <a 
-                  className={`pagination-link ${
-                    noPage === currentPage ? 'is-current' : ''
-                  }`}
-                  onClick={() => onSpecificPage(noPage)}
-                >
-                  {noPage}
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-    </nav>
+    <nav className="d-flex justify-content-center">
+  <ul className="pagination">
+    <li className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}>
+      <a className="page-link" href="#" onClick={onPreviusPage}>Anterior</a>
+    </li>
+    {pageNumber.map(noPage => (
+      <li key={noPage} className={`page-item ${noPage === currentPage ? 'active' : ''}`}>
+        <a className="page-link" href="#" onClick={() => onSpecificPage(noPage)}>{noPage}</a>
+      </li>
+    ))}
+    <li className={`page-item ${currentPage >= pageNumber.length ? 'disabled' : ''}`}>
+      <a className="page-link" href="#" onClick={onNextPage}>Siguiente</a>
+    </li>
+  </ul>
+</nav>
+
+
   );
 }
