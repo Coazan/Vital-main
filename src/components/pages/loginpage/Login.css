@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 /* Container Styles */
 .login-container {
   width: 300px; /* Adjust width as needed */

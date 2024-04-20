@@ -1,8 +1,27 @@
 import React, { useState } from 'react';
 import './Login.css'; // Import the CSS file
 
+// Define el componente NavBar
+export function NavBar() {
+  const [isHidden, setIsHidden] = useState(true);
 
+  const toggleNavbar = () => {
+    setIsHidden(!isHidden);
+  };
 
+  const handleRedirect = () => {
+    setIsHidden(false); // Establece isHidden como false al hacer clic en el botón de redirección
+     // Redirecciona a la ruta /home
+  };
+
+  return (
+    <div>
+      {/* Aquí va el código de tu NavBar */}
+    </div>
+  );
+}
+
+// Define el componente Login
 export function Login() {
   // State variables for username and password
   const [username, setUsername] = useState('');
@@ -45,9 +64,7 @@ export function Login() {
             <input type="checkbox" id="remember-me" /> Recuérdame
           </label>
         </div>
-        <button onClick={() => window.location.href = "/home"} type="button">Iniciar sesión</button>
-
-
+        <button  onClick={() => window.location.href = "/home"} type="button">Iniciar sesión</button>
         <a href="#">¿Olvidaste tu contraseña?</a>
       </form>
     </div>
