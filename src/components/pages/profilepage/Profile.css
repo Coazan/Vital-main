@@ -1,12 +1,12 @@
 body{
     background-color: rgb(19, 18, 18);
     color: gainsboro;
-
 }
 
-#colCard{
+.columna{
     justify-content: center;
     display: flex;
+    height: 400px;
 }
 
 .data{
@@ -31,13 +31,17 @@ body{
 
 .btn:hover{
     background-color: chartreuse;
+    color: black;
 }
 
-nav{
+#genre{
     justify-content: space-between;
+    color: gainsboro;
 }
 
-#gender{
-    justify-content: space-between;
+#favs {
+    overflow-y: auto;
+    max-height: calc(100% - 46px); 
+    background-color: gainsboro;
 }
 
