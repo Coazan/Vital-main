@@ -3,25 +3,31 @@ body{
     color: gainsboro;
 }
 
-.columna{
+.columna1{
     justify-content: center;
     display: flex;
-    height: 400px;
+    height: min-content;
 }
 
-.data{
+.columna2{
+    justify-content: center;
+    display: flex;
+    height: 412px;
+}
+
+.data-container{
     color: gainsboro;
     text-align: center;
 }
 
-.data h6{
+.data-container h6{
     color: greenyellow;
 }
 
 .card{
     border-radius: 10px;
     width: 400px;    
-    z-index: 1;
+    height: min-content;
 }
 
 .btn{
@@ -41,7 +47,24 @@ body{
 
 #favs {
     overflow-y: auto;
-    max-height: calc(100% - 46px); 
+    max-height: calc(100% - 45px); 
     background-color: gainsboro;
+}
+
+.data:hover{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    transform: translateY(-2px);
+
+}
+
+.data{
+    width: calc(100% - 80px);
+    border-radius: 6px;
+}
+
+.data:active{
+    transform: translateY(0);
 }
 
