@@ -51,6 +51,10 @@ body{
     background-color: gainsboro;
 }
 
+#fav-container{
+    width: 375px;
+}
+
 .data:hover{
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;

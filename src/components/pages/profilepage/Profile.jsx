@@ -3,19 +3,25 @@ import "./Profile.css";
 import vital from "../../../assets/vital.jpg"
 import { useSelector, useDispatch } from "react-redux";
 import TextArea from "./EditText";
+import { removeFavorite } from "../../../storage/slice";
 
 export const Profile = () => {
+  const dispatch = useDispatch();
   const favs = useSelector(state => state.mrFavorites.favorites)
   const [isActive, setIsActive] = useState(false);
   const [id, setId] = useState();
   const [name, setName] = useState("Vital")
   const [description, setDescription] = useState("The best way to listen to music.")
   const [about, setAbout] = useState("I was developed for some students at FUSALMO'S frontend course, but I would really like to be a real app.")
-  const [favorites, setfavorites] = useState("rock, country")
+  const [favorites, setFavorites] = useState("rock, country")
 
   const ActivateEdit = (newId) => {
     setIsActive(!isActive);
     setId(newId)
+  }
+
+  const removeFromFavorites = (index)=>{
+    dispatch(removeFavorite(index))
   }
 
   const Edit = (Id, value) => {
@@ -30,7 +36,7 @@ export const Profile = () => {
         setAbout(value);
         break;
       case 4:
-        setfavorites(value);
+        setFavorites(value);
         break;
       default:
         break;
@@ -64,7 +70,7 @@ export const Profile = () => {
                   </div>
                 </div>
                 <div className=" d-flex d-flex justify-content-center" id="genre">
-                  <p> Favorits Genres: </p>
+                  <p> Favorite Genres: </p>
                   <p className="data border p-2 " onDoubleClick={() => ActivateEdit(4)} 
                   data-bs-toggle="tooltip" title="Doble click to edit!">{favorites}</p>
                 </div>
@@ -74,12 +80,12 @@ export const Profile = () => {
             </article>
           </div>          
           <div className="columna2 col-12 col-lg-6">
-            <div className="border rounded w-75">
+            <div className="border rounded" id="fav-container">
               <h2>Favoritos</h2>
               <hr className="m-0" />
               <ul className="list-group" id="favs">
                 {favs.map((favorito, index) => (
-                  <li className="d-flex justify-content-between align-items-center m-1 " key={index}>
+                  <li className="d-flex justify-content-between align-items-center m-1 p-1" key={index}>
                     <iframe
                       src={`https://open.spotify.com/embed/track/${favorito.data.id}`}
                       width="300"
@@ -89,6 +95,7 @@ export const Profile = () => {
                       allow="encrypted-media"
                     ></iframe>
                     <span><button className="btn rounded-circle" onClick={() => removeFromFavorites(index)}><i className="fa-solid fa-xmark "></i></button></span>
+
                   </li>
                 ))}
               </ul>
