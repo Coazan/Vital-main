@@ -4,7 +4,6 @@ import novedadesData from './mocks/novedades.json';
 import './home.css';
 
   export function Home() {
-  const [count, setCount] = useState(0);
 
   return (
     <div >
