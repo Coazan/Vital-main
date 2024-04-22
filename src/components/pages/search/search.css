@@ -62,12 +62,11 @@ input[type="avion"] + button {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s;
-  
+  transition: background-color 0.3s;  
 }
 
 button:hover {
-  background-color: #2a0cd7;
+  background-color: #0087c5;
  
 }
 

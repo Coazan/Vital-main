@@ -21,7 +21,7 @@ body{
 }
 
 .data-container h6{
-    color: greenyellow;
+    color: #0fb3ff;
 }
 
 .card{
@@ -36,7 +36,7 @@ body{
 }
 
 .btn:hover{
-    background-color: chartreuse;
+    background-color: #cf119c;
     color: black;
 }
 
