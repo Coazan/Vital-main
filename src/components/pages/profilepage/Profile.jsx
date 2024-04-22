@@ -70,7 +70,7 @@ export const Profile = () => {
                   </div>
                 </div>
                 <div className=" d-flex d-flex justify-content-center" id="genre">
-                  <p> Favorite Genres: </p>
+                  <p> Géneros Favoritos: </p>
                   <p className="data border p-2 " onDoubleClick={() => ActivateEdit(4)} 
                   data-bs-toggle="tooltip" title="Doble click to edit!">{favorites}</p>
                 </div>
