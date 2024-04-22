@@ -3,12 +3,7 @@ import './Login.css'; // Import the CSS file
 
 // Define el componente NavBar
 export function NavBar() {
-  const [isHidden, setIsHidden] = useState(true);
-
-  const toggleNavbar = () => {
-    setIsHidden(!isHidden);
-  };
-
+  
   const handleRedirect = () => {
     setIsHidden(false); // Establece isHidden como false al hacer clic en el botón de redirección
      // Redirecciona a la ruta /home
@@ -38,7 +33,7 @@ export function Login() {
   return (
     <div className="login-container">
       <h2>Iniciar sesión</h2>
-      <form onSubmit={handleSubmit}>
+      <form className='nayik' onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="username">Nombre de usuario</label>
           <input
@@ -64,7 +59,7 @@ export function Login() {
             <input type="checkbox" id="remember-me" /> Recuérdame
           </label>
         </div>
-        <button  onClick={() => window.location.href = "/home"} type="button">Iniciar sesión</button>
+        <button  onClick={() => window.location.href = "/home"} type="dos">Iniciar sesión</button>
         <a href="#">¿Olvidaste tu contraseña?</a>
       </form>
     </div>

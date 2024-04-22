@@ -1,114 +1,102 @@
-/* Overall container styling */
 .container {
-  display: flex; /* Enable horizontal layout */
-  justify-content: flex-end; /* Align content to the right */
-  width: 100%; /* Stretch container to full width */
-  max-width: 700px; /* Set a maximum width for responsiveness */
-  margin: 0 auto; /* Center horizontally */
-}
-
-/* Search bar styling */
-form {
+  max-width:2000px;
+  margin: auto;
+  padding: 1em;
+ }
+ .track-container {
   display: flex;
-  align-items: center;
-  width: 100%; /* Allow full width within container */
-  background-color: #fff; /* White background for contrast */
-  border-radius: 8px; /* Rounded corners for a softer look */
-  padding: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  padding: 10px;  
 }
 
-input[type="text"] {
-  padding: 10px;
-  border: none; /* Remove default border */
-  border-radius: 4px; /* Rounded corners for consistency */
-  flex-grow: 1; /* Allow input to expand to fill remaining space */
-  margin-right: 10px; /* Add some margin for separation */
-}
 
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #0d8a3d; /* Green color */
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button[type="submit"] {
-  background-color: #fff; /* White button background */
-  color: #007bff; /* Vibrant blue text */
-  padding: 10px 20px;
-  border: 2px solid #007bff; /* Solid blue border */
-  border-radius: 4px; /* Rounded corners for consistency */
-  cursor: pointer;
-  transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition on hover */
-}
-
-button[type="submit"]:hover {
-  background-color: #0056b3; /* Darker blue background on hover */
-  border-color: #0056b3; /* Darker blue border on hover */
-}
-
-/* Error message styling */
-.error {
-  color: #dc3545; /* Red error color */
-  font-weight: bold;
-  text-align: center;
-  margin: 10px 0;
-}
-
-/* Track container styling */
-.track-container {
-  display: flex;
-  flex-wrap: wrap; /* Allow tracks to wrap on smaller screens */
-  margin-top: 20px;
-}
-
-/* Individual track styling */
 .track {
-  width: calc(33% - 10px); /* Set track width based on thirds */
-  margin: 0 10px 10px 0; /* Add margin for spacing */
-  background-color: #fff; /* White background for tracks */
-  border-radius: 8px; /* Rounded corners for a softer look */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: calc(400px); /* Porcentaje menor y menos píxeles de margen */
+  margin-bottom: 20px; /* Reducción de margen */
+  box-shadow: 2px 4px 6px rgba(231, 9, 120, 0.5); /* Reducción de la sombra */
+  border-radius: 8px; /* Reducción del radio de borde */
   padding: 15px;
 }
+
+
 
 .track img {
-  width: 100%; /* Stretch image to full track width */
-  border-radius: 4px; /* Rounded corners for consistency */
-  margin-bottom: 10px; /* Add some margin below image */
+  width: 100%;
+  height: auto;
+  margin-bottom: 0px;  
+  
+}
+
+input[type="avion"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: #212121;
+  color: #cf119c;
+  box-shadow: 2px 2px 4px rgba(231, 9, 194, 0.7);
+  width: 250px;
+}
+
+input[type="avion"]::placeholder {
+  color: #b3b3b3;
+ 
+}
+input[type="avion"] + button {
+  margin-left: 10px;
+}
+
+
+.yate {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.carro  {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #681db9;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+}
+
+button:hover {
+  background-color: #2a0cd7;
+ 
 }
 
 .track-info {
-  display: flex;
-  justify-content: space-between; /* Align content within track info */
-  align-items: center;
+  margin-top: px;
+    
 }
 
 .track-info h2 {
-  margin: 0;
-  font-size: 16px;
+  margin-top: 0;
+  font-size: 20px;
 }
+
+
 
 .track-info iframe {
-  width: 180px; /* Adjust width for better responsiveness */
-  height: 80px;
+  width: 100%;
+  border-radius: 2px;
+  
 }
 
-/* Favorite button styling */
-button.fa-sharp {
-  background: none; /* Remove default button styling */
+
+.maracas{
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #681db9;
+  color: #fff;
   border: none;
+  border-radius: 10px;
   cursor: pointer;
-  color: #f0f8ff; /* Light icon color for contrast */
-  font-size: 1.2em; /* Slightly larger icon size */
-  transition: color 0.3s ease; /* Smooth transition on hover */
-}
-
-button.fa-sharp:hover {
-  color: #007bff; /* Vibrant blue color on hover for emphasis */
+  transition: background-color 0.3s; 
 }
