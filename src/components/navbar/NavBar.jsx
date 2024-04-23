@@ -32,6 +32,7 @@ export function NavBar() {
                 <NavLink to="/profile" className="nav-link" data-bs-toggle="pill">
                   <i className="fa-solid fa-user"></i> Perfil
                 </NavLink>
+                
               </li>
               <li className="nav-item">
                 <NavLink to="/search" className="nav-link" data-bs-toggle="pill">
