@@ -1,22 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css'; // Import the CSS file
 
-// Define el componente NavBar
-export function NavBar() {
-  
-  const handleRedirect = () => {
-    setIsHidden(false); // Establece isHidden como false al hacer clic en el botón de redirección
-     // Redirecciona a la ruta /home
-  };
-
-  return (
-    <div>
-      {/* Aquí va el código de tu NavBar */}
-    </div>
-  );
-}
-
-// Define el componente Login
 export function Login() {
   // State variables for username and password
   const [username, setUsername] = useState('');

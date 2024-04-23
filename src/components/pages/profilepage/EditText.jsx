@@ -11,7 +11,11 @@ const TextArea = ({ ActivateEdit, id, Edit }) => {
         if (text !== '') {
             ActivateEdit();
         } else {
-            alert('No se puede guardar un campo vacío.');
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "No se puede guardar un campo vacío"
+              });
         }
     }
 
