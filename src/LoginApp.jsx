@@ -5,16 +5,16 @@ import MaybeShowNavBar from './ShowNavBar/ShowNavBar';
 
 
 function LoginApp() {
-  return(
-    
+  return (
+
     <BrowserRouter>
-   <MaybeShowNavBar>
-    <NavBar/>
-   </MaybeShowNavBar>
-    <AppRouter/>
-    
+      <MaybeShowNavBar>
+        <NavBar />
+      </MaybeShowNavBar>
+      <AppRouter />
+
     </BrowserRouter>
-    
+
   )
 }
 export default LoginApp

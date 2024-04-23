@@ -9,22 +9,22 @@ export const AppRouter = () => {
 
   return (
     <Routes>
-     
+
       {authStatus === 'not-authenticated' ? (
         <Route path='/' element={<Login />} />
       ) : (
         <Route path='*' element={<Home />} />
-     
+
       )}
       {/* Siempre que no coincida con ninguna ruta anterior */}
-      
-      <Route path='*' element={<Navigate to='/login' />} />
+
+      <Route path='*' element={<Navigate to='/' />} />
       <Route path="/profile" element={<Profile />} />
-        <Route path="/home" element={<Home />} />
-            <Route path="/search" element={<Search />} />
-            
-            
-            
+      <Route path="/home" element={<Home />} />
+      <Route path="/search" element={<Search />} />
+
+
+
     </Routes>
   );
 };
