@@ -1,6 +1,6 @@
 import React, { useState } from 'react'; // Importa useState desde React
 import './Login.css'; // Importa el archivo CSS
-import vital from "../../../assets/vital.jpg";
+import vital from './vital.jpg';
 
 export function Login() {
   // State variables for username and password
