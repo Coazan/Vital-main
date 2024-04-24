@@ -17,7 +17,7 @@ export function Login() {
 
   return (
     <>
-      <img src={vital} className="login-logo" /> {/* Move the image outside the main container */}
+      <img src={vital} className="login-logo rounded-circle" /> {/* Move the image outside the main container */}
       <div className="login-container">
         <h2>Iniciar sesión</h2>
         <form className='nayik' onSubmit={handleSubmit}>

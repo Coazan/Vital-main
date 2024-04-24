@@ -12,15 +12,17 @@
 
 .login-logo {
   /* Estilos para la imagen del logo */
+  
   position: fixed;
   bottom: 20px;
   left: 20px;
-  width: 120px;
-  height: auto;
+  opacity: 20%;
+  height: 300px;
   object-fit: cover;
   z-index: 1000;
 
   animation: bounce 2s ease-in-out infinite; /* Animación de rebote */
+  
 }
 
 @keyframes bounce {
