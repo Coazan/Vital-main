@@ -1,87 +1,90 @@
-/* Container Styles */
+/* Estilos para la página de inicio de sesión */
+
 .login-container {
-  width: 300px;
-  /* Adjust width as needed */
-  margin: 50px auto;
-  padding: 40px;
-  border-radius: 8px;
-  background-color: #f0f0f0;
-  /* Light gray background */
-  box-shadow: 3px 4px 3px rgb(255, 0, 212);
-}
-
-/* Title Styles */
-.login-container h2 {
-  margin-bottom: 20px;
-  text-align: center;
-  color: #333;
-  /* Dark gray for better contrast */
-
-}
-
-
-.nayik {
+  /* Estilos para el contenedor que contiene el formulario */
   display: flex;
-  flex-direction: column;
-
+  flex-direction: column; /* Apilar elementos verticalmente */
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px; /* Agregar espacio interno */
 }
 
-/* Label Styles */
+.login-logo {
+  /* Estilos para la imagen del logo */
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+  z-index: 1000;
+
+  animation: bounce 2s ease-in-out infinite; /* Animación de rebote */
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  margin: 0 0 20px; /* Añadir espacio debajo del título */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Añadir espacio entre grupos de formulario */
+}
+
 label {
+  /* Estilos para las etiquetas */
   display: block;
   margin-bottom: 5px;
-  /* Adjust spacing as needed */
-  color: #1d17cd;
-  /* Gray for labels */
 }
 
-/* Input Field Styles */
 input[type="text"],
 input[type="password"] {
+  /* Estilos para los campos de entrada */
   width: 100%;
-  padding: 12px 15px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background-color: #fff;
-  /* White background for inputs */
-  font-size: 16px;
-  */
+  box-sizing: border-box;
+}
 
-  /* Input Focus Styles */
-  input[type="text"]:focus,
-  input[type="password"]:focus {
-    outline: none;
-    border-color: #007bff;
-    /* Blue border on focus */
-  }
+button {
+  /* Estilos para el botón */
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Agregar transición suave */
+}
 
-  /* Checkbox Styles */
-  .form-group input[type="checkbox"] {
-    margin-right: 5px;
-    /* Add spacing between checkbox and label */
-  }
+button:hover {
+  background-color: #0056b3; /* Cambiar color de fondo al pasar el mouse */
+}
 
-  /* "Remember Me" Label Styles */
-  label[for="remember-me"] {
-    color: #999;
-    /* Lighter gray for "Remember Me" label */
-    font-size: 14px;
-    /* Slightly smaller font size */
-  }
+a {
+  /* Estilos para el enlace */
+  padding-left: 5px;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 10px;
+}
 
-  /* Submit Button Styles */
-  dos [type="submit"] {
-    width: 100%;
-    padding: 12px 20px;
-    margin-top: 15px;
-    /* Spacing after inputs */
-    border: none;
-    border-radius: px;
-    background-color: #007bff;
-    /* Blue background color */
-    color: #fff;
-    /* White text color */
-    font-size: 16px;
-
-  }
+a:hover {
+  text-decoration: underline; /* Subrayar el enlace al pasar el mouse */
 }
