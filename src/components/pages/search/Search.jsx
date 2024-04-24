@@ -6,7 +6,7 @@ import { addFavorite } from "../../../storage/slice";
 export function Search() {
   const [cancion, setCancion] = useState("");
   const [canciones, setCanciones] = useState([]);
-  const [favoritos, setFavoritos] = useState(false);
+  const [favoritos, setFavoritos] = useState([]);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const dispatch = useDispatch();
@@ -53,7 +53,7 @@ export function Search() {
 
   function addToFavorites(cancion) {
     dispatch(addFavorite(cancion));
-    setFavoritos(!favoritos);
+    setFavoritos([...favoritos, cancion]);
   }
 
   function removeFromFavorites(index) {
@@ -65,14 +65,15 @@ export function Search() {
   return (
     <div className="container">
       <h2>Busca tu música Favorita🌟</h2>
-      <form onSubmit={handleSearch}>
+      <form className="yate" onSubmit={handleSearch}>
         <input
-          type="text"
+          type="avion"
           value={cancion}
           onChange={(e) => setCancion(e.target.value)}
+          placeholder="Busca una canción o artista"
         />
-        <button type="submit" disabled={loading}>
-          {loading ? "Buscando..." : <i class="fa-solid fa-magnifying-glass"></i>}
+        <button className="carro" type="submit" disabled={loading}>
+          {loading ? "Buscando..." : <i className="fas fa-search"></i>}
         </button>
       </form>
       {error && <div className="error">{error}</div>}
@@ -86,20 +87,23 @@ export function Search() {
               <h2>{cancion.data.name}</h2>
               <iframe
                 src={`https://open.spotify.com/embed/track/${cancion.data.id}`}
-                width="300"
+                width="100%"
                 height="80"
                 frameBorder="0"
                 allowTransparency="true"
                 allow="encrypted-media"
               ></iframe>
-              <button onClick={() => addToFavorites(cancion)}>
-              <i class="fa-sharp fa-regular fa-star"></i>
+              <button className="maracas" onClick={() => addToFavorites(cancion)}>
+                {favoritos.includes(cancion) ? (
+                  <i className="fas fa-heart"></i>
+                ) : (
+                  <i className="far fa-heart"></i>
+                )}
               </button>
             </div>
           </div>
         ))}
       </div>
-      
     </div>
   );
 }

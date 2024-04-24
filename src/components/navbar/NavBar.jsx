@@ -23,21 +23,29 @@ export function NavBar() {
             </NavLink>
           </div>
           <ul className="nav nav-pills">
-            <li className="nav-item">
-              <NavLink to="/home" className={"nav-link"} data-bs-toggle={"pill"}><i className="fa-solid fa-house"></i></NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/profile" className={"nav-link"} data-bs-toggle={"pill"}><i className="fa-solid fa-user"></i></NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/search" className={"nav-link"}
-              data-bs-toggle={"pill"}><i
-              className="fa-solid fa-magnifying-glass"></i></NavLink>
-              
-            </li>
-          </ul>
-          <div>
-          </div>
+              <li className="nav-item">
+                <NavLink to="/home" className="nav-link" data-bs-toggle="pill">
+                  <i className="fa-solid fa-house"></i> Inicio
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/profile" className="nav-link" data-bs-toggle="pill">
+                  <i className="fa-solid fa-user"></i> Perfil
+                </NavLink>
+                
+              </li>
+              <li className="nav-item">
+                <NavLink to="/search" className="nav-link" data-bs-toggle="pill">
+                  <i className="fa-solid fa-magnifying-glass"></i> Buscar
+                </NavLink>
+              </li>
+
+              <li className="nav-item">
+                <NavLink to="/" className="exit nav-link" data-bs-toggle="pill">
+                <i className="fa-solid fa-right-from-bracket"></i> Salir
+                </NavLink>
+              </li>
+            </ul> 
         </div>
       </nav>
     </>

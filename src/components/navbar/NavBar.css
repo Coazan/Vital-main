@@ -1,5 +1,6 @@
 #logo{
-    height: 40px;
+    padding: 5px;
+    height: 50px;
     border-radius: 6px;
 }
 
@@ -8,7 +9,7 @@
 }
 
 .nav-link:hover{
-    color: chartreuse;
+    color: #cf119c;
 }
 
 #profileIco{
@@ -19,3 +20,8 @@
     background: gainsboro;
     color: black;
 }
+
+.exit:hover{
+    color: red;
+}
+
