@@ -1,6 +1,6 @@
 import React from "react";
 import "./NavBar.css";
-import vital from "../../assets/vital.jpg"
+import vital from "../../../public/vital.jpg"
 
 
 import { NavLink } from "react-router-dom";

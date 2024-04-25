@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Profile.css";
-import vital from "../../../assets/vital.jpg"
+import vital from "../../../../public/vital.jpg"
 import { useSelector, useDispatch } from "react-redux";
 import TextArea from "./EditText";
 import { removeFavorite } from "../../../storage/slice";

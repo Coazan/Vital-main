@@ -1,6 +1,7 @@
 import React, { useState } from 'react'; // Importa useState desde React
 import './Login.css'; // Importa el archivo CSS
 import vital from './vital.jpg';
+import { NavLink } from 'react-router-dom';
 
 export function Login() {
   // State variables for username and password
@@ -46,9 +47,11 @@ export function Login() {
               <input type="checkbox" id="remember-me" /> Recuérdame
             </label>
           </div>
-          <button onClick={() => (window.location.href = "/home")} type="dos">
-            Iniciar sesión
-          </button>
+          <NavLink to={"/home"}>
+            <button type="dos">
+              Iniciar sesión
+            </button>
+          </NavLink>
           <a href="#">¿Olvidaste tu contraseña?</a>
         </form>
       </div>
