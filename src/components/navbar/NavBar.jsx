@@ -18,7 +18,7 @@ export function NavBar() {
             <img
               id="logo"
               src={vital}
-              className="rounded-circle"
+              className="rounded-circle img-fluid"
             />
             </NavLink>
           </div>
